@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo-simples.png">
+    <title>NutriVitta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="site-header" data-aos="fade-down">
+        <img src="../images/logo.png" alt="Logo NutriVitta">
+        <nav class="nav-pill">
+            <a href="#inicio">Início</a>
+            <a href="#calculadoras">Calculadoras</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#" id="open-client-modal">Clientes</a>
+        </nav>
+
+        <button class="cta">Agendar consulta</button>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content" data-aos="fade-right">
+            <h1 class="hero-title">
+                Transforme sua saúde com <span class="hero-strong">equilíbrio <span class="hero-olive">e</span> nutrição
+                    inteligente</span>
+            </h1>
+            <p class="hero-text">
+                Planos personalizados, avaliação completa e acompanhamento profissional
+                para você viver melhor.
+            </p>
+            <button class="hero-btn">Fazer avaliação</button>
+        </div>
+        <div>
+            <img src="../images/mulher.png" alt="Mulher sorrindo comendo salada" class="hero-image" data-aos="fade-left"
+                data-aos-delay="100">
+        </div>
+    </section>
+
+    <main>
+        <section id="calculadoras" class="calculadoras-container">
+            <h2 class="calc-heading" data-aos="fade-up">Descubra seu perfil nutricional</h2>
+            <div class="calculadoras-grid" data-aos="fade-up" data-aos-delay="120">
+                <article class="calc-card card" data-card="tmb" tabindex="0">
+                    <img src="../images/TMB.png" alt="Ícone calculadora TMB" class="calc-icon-img">
+                    <div class="calc-footer compact">
+                        <span class="calc-pill">TMB</span>
+                    </div>
+                    <div class="calc-footer featured">
+                        <h3 class="calc-title">TMB</h3>
+                        <button class="calc-btn">CALCULAR</button>
+                    </div>
+                </article>
+                <article class="calc-card card is-active active is-default" data-card="peso-ideal" tabindex="0">
+                    <img src="../images/Peso-ideal.png" alt="Ícone de peso ideal" class="calc-icon-img">
+                    <div class="calc-footer compact">
+                        <span class="calc-pill">Peso Ideal</span>
+                    </div>
+                    <div class="calc-footer featured">
+                        <h3 class="calc-title">Peso Ideal</h3>
+                        <button class="calc-btn">CALCULAR</button>
+                    </div>
+                </article>
+                <article class="calc-card card" data-card="imc" tabindex="0">
+                    <img src="../images/IMC.png" alt="Ícone calculadora IMC" class="calc-icon-img">
+                    <div class="calc-footer compact">
+                        <span class="calc-pill">IMC</span>
+                    </div>
+                    <div class="calc-footer featured">
+                        <h3 class="calc-title">IMC</h3>
+                        <button class="calc-btn">CALCULAR</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="explicacoes" class="explicacoes-section">
+            <div class="explicacoes-header" data-aos="fade-up">
+                <h2>Entenda as calculadoras</h2>
+                <p>IMC, TMB e Peso Ideal explicados de forma simples.</p>
+            </div>
+            <div class="explicacoes-grid" data-aos="fade-up" data-aos-delay="120">
+                <article class="explicacao-card" data-aos="fade-up" data-aos-delay="0">
+                    <h3>IMC (Índice de Massa Corporal)</h3>
+                    <p>
+                        O IMC é um indicador que relaciona peso e altura. Ele ajuda a identificar
+                        se a pessoa está com baixo peso, peso adequado, sobrepeso ou obesidade.
+                    </p>
+                    <span class="explicacao-formula">Fórmula: peso ÷ altura²</span>
+                </article>
+                <article class="explicacao-card" data-aos="fade-up" data-aos-delay="120">
+                    <h3>TMB (Taxa de Metabolismo Basal)</h3>
+                    <p>
+                        A TMB estima a quantidade mínima de calorias que o corpo precisa para manter
+                        as funções vitais em repouso. É a base para definir metas calóricas.
+                    </p>
+                    <span class="explicacao-formula">Fatores: sexo, idade, peso e altura</span>
+                </article>
+                <article class="explicacao-card" data-aos="fade-up" data-aos-delay="240">
+                    <h3>Peso Ideal</h3>
+                    <p>
+                        O peso ideal é uma estimativa baseada na altura e sexo. Serve como referência
+                        para traçar metas realistas de saúde e bem-estar.
+                    </p>
+                    <span class="explicacao-formula">Estimativa: altura + sexo</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos-section">
+            <h1 class="titulo-servicos" data-aos="fade-up">SERVIÇOS</h1>
+            <div class="servicos-card-big" data-aos="fade-up" data-aos-delay="120">
+                <div class="servicos-card-image">
+                    <img src="../images/servicos-imagem.png" alt="Prato com alimentos saudáveis">
+                </div>
+                <div class="servicos-card-text">
+                    <p>
+                        As calculadoras da Bellavita – Nutrição e Saúde permitem avaliar de
+                        forma rápida e personalizada o IMC, a TMB e o peso ideal, ajudando
+                        você a entender melhor seu corpo e tomar decisões mais saudáveis.
+                    </p>
+                    <p>
+                        Com base nesses dados, a plataforma oferece avaliação nutricional,
+                        planos alimentares personalizados e orientações específicas para cada
+                        objetivo, incluindo soluções adaptadas para o público infantil,
+                        promovendo mais saúde e qualidade de vida.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="etapas-section">
+            <div class="etapas-wrapper">
+                <article class="etapa-card" data-aos="zoom-in" data-aos-delay="0">
+                    <span class="etapa-badge">1</span>
+                    <p>
+                        Faça sua avaliação por
+                        meio das calculadoras
+                    </p>
+                </article>
+                <article class="etapa-card" data-aos="zoom-in" data-aos-delay="120">
+                    <span class="etapa-badge">2</span>
+                    <p>
+                        Veja a análise dos
+                        seus resultados
+                    </p>
+                </article>
+                <article class="etapa-card" data-aos="zoom-in" data-aos-delay="240">
+                    <span class="etapa-badge">3</span>
+                    <p>
+                        Receba um plano
+                        nutricional personalizado
+                        e completo
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="resultados" class="resultados-section">
+            <h2 class="resultados-title" data-aos="fade-up">RESULTADOS</h2>
+            <p class="resultados-subtitle" data-aos="fade-up" data-aos-delay="120">
+                Confira as avaliações de nossos clientes e perceba a transformação
+                nutricional acontecendo.
+            </p>
+            <div class="resultados-carousel" data-aos="fade-up" data-aos-delay="220">
+                <button class="carousel-control prev" type="button" aria-label="Depoimento anterior">‹</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <article class="resultado-card is-active">
+                            <header class="resultado-header">
+                                <img src="https://images.unsplash.com/photo-1769636929231-3cd7f853d038?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=800"
+                                    alt="Cliente sorrindo" class="resultado-avatar">
+                                <div>
+                                    <h3 class="resultado-nome">Lindevalter Michael</h3>
+                                    <span class="resultado-cidade">Sorocaba, SP</span>
+                                </div>
+                            </header>
+                            <p class="resultado-texto">
+                                Depois que comecei a usar as calculadoras e o plano da NUTRIVITTA,
+                                consegui organizar minha alimentação e já percebi mudanças reais no corpo
+                                e na disposição. Recomendo demais!
+                            </p>
+                        </article>
+                        <article class="resultado-card">
+                            <header class="resultado-header">
+                                <img src="https://images.unsplash.com/photo-1667382137349-0f5cb5818a7c?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=800"
+                                    alt="Cliente sorrindo" class="resultado-avatar">
+                                <div>
+                                    <h3 class="resultado-nome">Mariana Lopes</h3>
+                                    <span class="resultado-cidade">Campinas, SP</span>
+                                </div>
+                            </header>
+                            <p class="resultado-texto">
+                                As metas ficaram claras desde o início. Em poucas semanas minha energia
+                                melhorou e o plano se encaixou direitinho na rotina.
+                            </p>
+                        </article>
+                        <article class="resultado-card">
+                            <header class="resultado-header">
+                                <img src="https://images.unsplash.com/photo-1590587023193-a7d02db44945?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=800"
+                                    alt="Cliente sorrindo" class="resultado-avatar">
+                                <div>
+                                    <h3 class="resultado-nome">Renata Souza</h3>
+                                    <span class="resultado-cidade">Jundiaí, SP</span>
+                                </div>
+                            </header>
+                            <p class="resultado-texto">
+                                O acompanhamento me ajudou a manter consistência sem radicalismo.
+                                Hoje me sinto mais leve e confiante com minhas escolhas diárias.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <button class="carousel-control next" type="button" aria-label="Próximo depoimento">›</button>
+            </div>
+            <div class="carousel-dots" data-aos="fade-up" data-aos-delay="260">
+                <button class="carousel-dot is-active" type="button" aria-label="Ir para depoimento 1"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para depoimento 2"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para depoimento 3"></button>
+            </div>
+        </section>
+
+
+
+        <section id="blog" class="blog-section">
+            <div class="blog-content" data-aos="fade-right">
+                <h2 class="blog-title">BLOG</h2>
+                <p class="blog-subtitle">
+                    Acompanhe as principais notícias, dicas e atualizações sobre
+                    estilo de vida e alimentação saudável
+                </p>
+                <div class="blog-list">
+                    <a class="blog-card" href="blog-1.html" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-thumb">
+                            <img src="../images/servicos-imagem.png" alt="Prato saudável">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Como manter a dieta?</h3>
+                            <p>
+                                Descubra 5 dicas essenciais para manter a dieta mesmo com as
+                                dificuldades do cotidiano.
+                            </p>
+                        </div>
+                    </a>
+                    <a class="blog-card" href="blog-2.html" data-aos="fade-up" data-aos-delay="180">
+                        <div class="blog-thumb">
+                            <img src="../images/servicos-imagem.png" alt="Prato saudável">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Lanches saudáveis no dia a dia</h3>
+                            <p>
+                                Ideias simples e práticas para fugir dos ultraprocessados
+                                e manter energia ao longo do dia.
+                            </p>
+                        </div>
+                    </a>
+                    <a class="blog-card" href="blog-3.html" data-aos="fade-up" data-aos-delay="260">
+                        <div class="blog-thumb">
+                            <img src="../images/servicos-imagem.png" alt="Prato saudável">
+                        </div>
+                        <div class="blog-text">
+                            <h3>Rotina alimentar organizada</h3>
+                            <p>
+                                Estratégias para planejar refeições e seguir o plano
+                                com mais leveza e constância.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-image-wrap" data-aos="fade-left" data-aos-delay="120">
+                <img src="../images/blog.png" alt="Ingredientes saudáveis" class="blog-image">
+            </div>
+        </section>
+
+        <section id="planner" class="planner-section">
+            <div class="planner-header" data-aos="fade-up">
+                <h2>Monte seu prato do dia</h2>
+                <p>Arraste os alimentos para montar uma refeição equilibrada.</p>
+            </div>
+            <form id="planner-form" class="planner-form" data-aos="fade-up" data-aos-delay="120">
+                <input id="planner-title" type="text" placeholder="Adicionar alimento..." required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <div class="planner-board">
+                <div class="planner-dropzone" data-status="backlog" data-aos="fade-up" data-aos-delay="0">
+                    <h3>Disponíveis</h3>
+                    <p class="planner-placeholder">Arraste itens para outras colunas.</p>
+                    <div class="planner-cards">
+                        <div class="planner-card">Frutas</div>
+                        <div class="planner-card">Verduras</div>
+                        <div class="planner-card">Proteínas magras</div>
+                        <div class="planner-card">Grãos integrais</div>
+                        <div class="planner-card">Água</div>
+                    </div>
+                </div>
+                <div class="planner-dropzone" data-status="in-progress" data-aos="fade-up" data-aos-delay="120">
+                    <h3>Meu prato</h3>
+                    <p class="planner-placeholder">Solte aqui para montar a refeição.</p>
+                    <div class="planner-cards"></div>
+                </div>
+                <div class="planner-dropzone" data-status="done" data-aos="fade-up" data-aos-delay="240">
+                    <h3>Selecionados</h3>
+                    <p class="planner-placeholder">Itens prontos para sua refeição.</p>
+                    <div class="planner-cards"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacao" class="avaliacao-section">
+            <div class="avaliacao-frame" data-aos="fade-up">
+                <div class="avaliacao-photo" aria-hidden="true" data-aos="fade-right" data-aos-delay="80"></div>
+                <div class="avaliacao-card" data-aos="fade-left" data-aos-delay="120">
+                    <h2 class="avaliacao-title">Avalie a NUTRIVITTA</h2>
+                    <label class="avaliacao-label" for="avaliacao-comentario">Comentário</label>
+                    <textarea id="avaliacao-comentario" class="avaliacao-textarea" rows="4"
+                        placeholder="Escreva aqui..."></textarea>
+                    <div class="avaliacao-rating">
+                        <span class="avaliacao-label">Nota</span>
+                        <button class="avaliacao-score" type="button" aria-label="Zerar nota">0</button>
+                        <div class="avaliacao-stars" role="radiogroup" aria-label="Nota de 0 a 5">
+                            <input type="radio" id="avaliacao-0" name="avaliacao-nota" value="0" checked>
+                            <div class="star-group" aria-label="Selecione sua nota">
+                                <input type="radio" id="avaliacao-5" name="avaliacao-nota" value="5">
+                                <label for="avaliacao-5" title="5 estrelas">★</label>
+                                <input type="radio" id="avaliacao-4" name="avaliacao-nota" value="4">
+                                <label for="avaliacao-4" title="4 estrelas">★</label>
+                                <input type="radio" id="avaliacao-3" name="avaliacao-nota" value="3">
+                                <label for="avaliacao-3" title="3 estrelas">★</label>
+                                <input type="radio" id="avaliacao-2" name="avaliacao-nota" value="2">
+                                <label for="avaliacao-2" title="2 estrelas">★</label>
+                                <input type="radio" id="avaliacao-1" name="avaliacao-nota" value="1">
+                                <label for="avaliacao-1" title="1 estrela">★</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="avaliacao-btn" type="button">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="calc-modal" id="calc-modal" aria-hidden="true">
+        <div class="calc-modal__backdrop" data-calc-close></div>
+        <div class="calc-modal__panel" role="dialog" aria-modal="true" aria-labelledby="calc-modal-title">
+            <header class="calc-modal__header">
+                <h2 id="calc-modal-title">Calculadora de IMC</h2>
+                <button class="calc-modal__close" type="button" aria-label="Fechar" data-calc-close>×</button>
+            </header>
+
+            <div class="calc-modal__steps" role="list">
+                <span class="calc-step is-active" data-step-indicator="1" role="listitem">1</span>
+                <span class="calc-step" data-step-indicator="2" role="listitem">2</span>
+                <span class="calc-step" data-step-indicator="3" role="listitem">3</span>
+                <span class="calc-step" data-step-indicator="4" role="listitem">4</span>
+            </div>
+
+            <div class="calc-modal__body">
+                <section class="calc-step-panel is-active" data-step-panel="1">
+                    <div class="calc-step-grid">
+                        <div class="calc-step-copy">
+                            <p class="calc-step-text" id="calc-step-description">
+                                O IMC (Índice de Massa Corporal) é uma forma simples de avaliar se o peso
+                                está adequado à altura. Ele ajuda a identificar possíveis riscos à saúde,
+                                mas não considera fatores como massa muscular, devendo ser usado apenas como referência
+                                inicial.
+                            </p>
+                            <p class="calc-step-text">
+                                Para começarmos, precisamos conhecer melhor o seu perfil. Responda a este
+                                questionários e receba um plano personalizado!
+                            </p>
+                            <div class="calc-type">
+                                <span>Selecione sua faixa etária</span>
+                                <label><input type="radio" name="calc-client" value="adult" checked> Adulto</label>
+                                <label><input type="radio" name="calc-client" value="child"> Criança</label>
+                            </div>
+                        </div>
+                        <div class="calc-step-media" aria-hidden="true">
+                            <img id="calc-step-image" src="../images/IMC.png" alt="Ilustração da calculadora" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calc-step-panel" data-step-panel="2">
+                    <h3 class="calc-step-title calc-step-title--center">Formulário</h3>
+                    <div class="calc-form-error" id="calc-form-error" role="alert"></div>
+
+                    <div class="calc-form" data-calc-form="imc">
+                        <div class="calc-form-group" data-client="adult">
+                            <label>Idade (em anos)
+                                <input type="number" id="imc-adult-idade" min="0" step="1" placeholder="Ex: 34">
+                            </label>
+                            <label>Peso (em kg)
+                                <input type="number" id="imc-adult-peso" min="1" step="0.1" placeholder="Ex: 68">
+                            </label>
+                            <div class="calc-radio calc-radio--inline">
+                                <span>Sexo</span>
+                                <label><input type="radio" name="imc-adult-sexo" value="male"> Masculino</label>
+                                <label><input type="radio" name="imc-adult-sexo" value="female"> Feminino</label>
+                            </div>
+                            <label>Altura (em cm)
+                                <input type="number" id="imc-adult-altura" min="50" step="0.1" placeholder="Ex: 180">
+                            </label>
+                        </div>
+                        <div class="calc-form-group" data-client="child">
+                            <label>Data de nascimento
+                                <input type="date" id="imc-child-nascimento">
+                            </label>
+                            <label>Peso (em kg)
+                                <input type="number" id="imc-child-peso" min="1" step="0.1" placeholder="Ex: 28">
+                            </label>
+                            <div class="calc-radio calc-radio--inline">
+                                <span>Sexo</span>
+                                <label><input type="radio" name="imc-child-sexo" value="male"> Masculino</label>
+                                <label><input type="radio" name="imc-child-sexo" value="female"> Feminino</label>
+                            </div>
+                            <label>Altura (em cm)
+                                <input type="number" id="imc-child-altura" min="50" step="0.1" placeholder="Ex: 120">
+                            </label>
+                            <div class="calc-optional">
+                                <h4>Dados complementares (opcional)</h4>
+                                <label>Altura do pai (cm)
+                                    <input type="number" id="imc-child-altura-pai" min="100" step="0.1"
+                                        placeholder="Ex: 175">
+                                </label>
+                                <label>Altura da mãe (cm)
+                                    <input type="number" id="imc-child-altura-mae" min="100" step="0.1"
+                                        placeholder="Ex: 162">
+                                </label>
+                                <label>Histórico de crescimento
+                                    <input type="text" id="imc-child-historico" placeholder="Peso e altura anteriores">
+                                </label>
+                                <label>Fase escolar
+                                    <select id="imc-child-fase">
+                                        <option value="">Selecione</option>
+                                        <option value="creche">Creche</option>
+                                        <option value="pre-escola">Pré-escola</option>
+                                        <option value="fundamental">Ensino fundamental</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-form" data-calc-form="tmb">
+                        <div class="calc-form-group" data-client="adult">
+                            <label>Idade (anos)
+                                <input type="number" id="tmb-adult-idade" min="0" step="1" placeholder="Ex: 30">
+                            </label>
+                            <label>Peso (kg)
+                                <input type="number" id="tmb-adult-peso" min="1" step="0.1" placeholder="Ex: 68">
+                            </label>
+                            <div class="calc-radio calc-radio--inline">
+                                <span>Sexo</span>
+                                <label><input type="radio" name="tmb-adult-sexo" value="male"> Masculino</label>
+                                <label><input type="radio" name="tmb-adult-sexo" value="female"> Feminino</label>
+                            </div>
+                            <label>Altura (cm)
+                                <input type="number" id="tmb-adult-altura" min="50" step="0.1" placeholder="Ex: 170">
+                            </label>
+                        </div>
+                        <div class="calc-form-group" data-client="child">
+                            <label>Data de nascimento
+                                <input type="date" id="tmb-child-nascimento">
+                            </label>
+                            <label>Peso (kg)
+                                <input type="number" id="tmb-child-peso" min="1" step="0.1" placeholder="Ex: 28">
+                            </label>
+                            <div class="calc-radio calc-radio--inline">
+                                <span>Sexo</span>
+                                <label><input type="radio" name="tmb-child-sexo" value="male"> Masculino</label>
+                                <label><input type="radio" name="tmb-child-sexo" value="female"> Feminino</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-form" data-calc-form="peso-ideal">
+                        <div class="calc-form-group" data-client="adult">
+                            <label>Altura (cm)
+                                <input type="number" id="peso-adult-altura" min="50" step="0.1" placeholder="Ex: 170">
+                            </label>
+                            <div class="calc-radio calc-radio--inline">
+                                <span>Sexo</span>
+                                <label><input type="radio" name="peso-adult-sexo" value="male"> Masculino</label>
+                                <label><input type="radio" name="peso-adult-sexo" value="female"> Feminino</label>
+                            </div>
+                        </div>
+                        <div class="calc-form-group" data-client="child">
+                            <label>Data de nascimento
+                                <input type="date" id="peso-child-nascimento">
+                            </label>
+                            <label>Altura (cm)
+                                <input type="number" id="peso-child-altura" min="50" step="0.1" placeholder="Ex: 120">
+                            </label>
+                            <div class="calc-radio calc-radio--inline">
+                                <span>Sexo</span>
+                                <label><input type="radio" name="peso-child-sexo" value="male"> Masculino</label>
+                                <label><input type="radio" name="peso-child-sexo" value="female"> Feminino</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calc-step-panel" data-step-panel="3">
+                    <h3 class="calc-step-title calc-step-title--center">RESULTADO</h3>
+                    <div class="calc-result">
+                        <div class="calc-result__pill">
+                            <span class="calc-result__number" id="calc-result-value">--</span>
+                            <span class="calc-result__label" id="calc-result-label">Preencha o formulário para ver o
+                                resultado.</span>
+                        </div>
+                        <p class="calc-result__detail" id="calc-result-detail"></p>
+                        <p class="calc-result__note" id="calc-result-note"></p>
+                    </div>
+                </section>
+
+                <section class="calc-step-panel" data-step-panel="4">
+                    <h3 class="calc-step-title calc-step-title--center">Cardápio personalizado</h3>
+                    <div class="calc-menu" id="calc-menu">
+                        <div class="calc-menu__summary" id="calc-menu-summary"></div>
+                        <div class="calc-menu__content" id="calc-menu-content"></div>
+                        <p class="calc-menu__note" id="calc-menu-note"></p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="calc-modal__footer">
+                <button class="calc-btn-secondary" type="button" data-calc-prev>Voltar</button>
+                <button class="calc-btn-primary" type="button" data-calc-next>Continuar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-wrap" data-aos="fade-up">
+            <div class="footer-brand">
+                <img src="../images/logo-simples.png" alt="NutriVitta" class="footer-logo">
+                <div class="footer-brand-text">
+                    <span class="footer-brand-title">NutriVitta</span>
+                    <span class="footer-brand-subtitle">Saúde e Bem-estar</span>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h3>Contatos</h3>
+                    <a href="mailto:nutrivitta@gmail.com">nutrivitta@gmail.com</a>
+                    <a href="https://instagram.com/nutrivitta" target="_blank" rel="noreferrer">@nutrivitta</a>
+                    <a href="tel:+5516999999999">+55 16 99999999</a>
+                </div>
+                <div class="footer-actions">
+                    <a class="footer-pill" href="#">Parcerias <span aria-hidden="true">↗</span></a>
+                    <a class="footer-pill" href="#">Consultar tabelas nutricionais <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            NUTRIVITTA 2025 - Saúde e Bem-estar
+        </div>
+    </footer>
+
+    <script src="../js/calculadoras.js"></script>
+    <script src="../js/resultados.js"></script>
+    <script src="../js/avaliacao.js"></script>
+    <script src="../js/planner.js"></script>
+
+    <script src="../js/clients.js"></script>
+    <script src="../js/calculadoras-modal.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-in-out',
+            once: false,
+        });
+    </script>
+</body>
+
+</html>

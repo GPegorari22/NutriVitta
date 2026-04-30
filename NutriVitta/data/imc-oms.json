@@ -1,0 +1,17 @@
+{
+  "source": "Tabela IMC Infantil (OMS - imagem)",
+  "male": [
+    { "years": 2, "normalMax": 18.1, "overMin": 18.2, "obesityMin": 19.3 },
+    { "years": 5, "normalMax": 16.8, "overMin": 16.9, "obesityMin": 18.3 },
+    { "years": 8, "normalMax": 17.9, "overMin": 18.0, "obesityMin": 20.6 },
+    { "years": 10, "normalMax": 19.2, "overMin": 19.3, "obesityMin": 22.5 },
+    { "years": 12, "normalMax": 21.0, "overMin": 21.1, "obesityMin": 24.8 }
+  ],
+  "female": [
+    { "years": 2, "normalMax": 18.0, "overMin": 18.1, "obesityMin": 19.1 },
+    { "years": 5, "normalMax": 16.9, "overMin": 17.0, "obesityMin": 18.2 },
+    { "years": 8, "normalMax": 18.3, "overMin": 18.4, "obesityMin": 20.9 },
+    { "years": 10, "normalMax": 19.9, "overMin": 20.0, "obesityMin": 23.0 },
+    { "years": 12, "normalMax": 21.7, "overMin": 21.8, "obesityMin": 25.3 }
+  ]
+}
